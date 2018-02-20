@@ -8,7 +8,9 @@
     "logo": [],
     "nav": [],
     "wrapper": [],
-    "search": []
+    "search": [],
+    "whatwedo": [],
+    "content": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
