@@ -1,0 +1,54 @@
+.btn {
+  padding: rem(12) rem(27);
+  font-family: $font-family-2;
+  font-size: rem(22);
+  font-weight: 400;
+  text-align: center;
+  background-color: $btn-bg;
+  border-radius: 30px;
+  transition: $default-transition;
+
+  &:hover {
+    color: $link-color;
+    letter-spacing: .1em;
+    background-color: $btn-bg;
+  }
+
+  &:active,  &:focus {
+    color: $link-color;
+    background-color: $btn-bg;
+    opacity: .7;
+  }
+
+  &--scroll {
+    padding: rem(5) rem(10);
+    font-size: rem(16);
+    background-color: rgba(255, 255, 255, .8);
+
+    &:hover {
+      font-size: rem(16);
+      color: #111;
+      letter-spacing: 0;
+      background-color: rgba(255, 255, 255, .6);
+
+      .bottom__icon {
+        margin-left: rem(10);
+        fill: $link-color--hover;
+        transition: $default-transition;
+      }
+    }
+
+    &:active, &:focus {
+      font-size: rem(16);
+      color: #111;
+      letter-spacing: 0;
+      background-color: rgba(255, 255, 255, .8);
+      opacity: .7;
+    }
+
+    .bottom__icon {
+      margin-left: rem(10);
+      fill: #111;
+    }
+  }
+}

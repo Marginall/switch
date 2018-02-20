@@ -1,0 +1,7 @@
+mixin search()
+
+  +b('search', {}, 'form')
+    +e('label', {}, 'label')
+      +e('input', {}, 'input')(type='search', placeholder='Search...')
+      button(type='button')
+        +svg('search', '13', '14')

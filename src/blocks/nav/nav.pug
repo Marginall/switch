@@ -1,0 +1,8 @@
+mixin nav()
+
+  +b('nav', {}, 'nav')
+    - var navItems = ['Home', 'What we do', 'Testimonial', 'Contact Us'];
+    +e('list', {}, 'ul')
+      for item in navItems
+        +e('item', {}, 'li')
+          +e('link', {}, 'a')(href='#')= item

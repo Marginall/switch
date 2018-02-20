@@ -1,0 +1,32 @@
+@import 'mixins/form-mixins.scss';
+@import 'mixins/grid-mixins.scss';
+
+@mixin none() {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+@mixin block() {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  position: static;
+  z-index: 1;
+}
+
+@mixin maxmedia($media) {
+  @media screen and (max-width: $media) { @content; }
+}
+
+@mixin minmedia($media) {
+  @media screen and (min-width: $media) { @content; }
+}
+
+@mixin line() {
+  outline: 1px solid red;
+}

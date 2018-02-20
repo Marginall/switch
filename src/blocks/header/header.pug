@@ -1,0 +1,12 @@
+mixin header()
+
+  +b('header')
+    +e('container', 'top')
+      +nav()
+      +logo()
+      +search()
+    +e('container', 'text')
+      +e('title title', {}, 'h1') Art is Eternal Happiness
+      +e('btn btn', 'header', 'a')(href='#') WORK WITH US
+    +b('btn', 'scroll', 'button')(type='button') scroll down
+      +svg('bottom', '7', '10')
