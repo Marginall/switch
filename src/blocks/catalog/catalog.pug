@@ -1,0 +1,17 @@
+include catalog.data.pug
+mixin catalog()
+
+  +b('catalog')
+    +e('title', {}, 'h3') OUR LATEST WORK
+    +e('text', {}, 'p') Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+    +e('control controls', {}, 'div')
+      +e('btn filter active', {}, 'button', type='button')(data-filter='.cat-1') Photography
+      +e('btn filter', {}, 'button')(type='button', data-filter='.cat-2') Design
+      +e('btn filter', {}, 'button')(type='button', data-filter='.cat-3') Print
+    +e('list container', {}, 'ul')
+      for item in items
+        +e('item mix', {}, 'li')(class=item.cat)
+          +e('link', {}, 'a')(href='#')
+            +e('img', {}, 'img')(src= item.src, width='160', alt='Work')
+    +b('btn', 'catalog', 'a')(href='#') View more work
+      +svg('bottom', '12', '16')

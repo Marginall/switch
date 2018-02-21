@@ -31,7 +31,7 @@
       letter-spacing: 0;
       background-color: rgba(255, 255, 255, .6);
 
-      .bottom__icon {
+      .bottom {
         margin-left: rem(10);
         fill: $link-color--hover;
         transition: $default-transition;
@@ -46,9 +46,10 @@
       opacity: .7;
     }
 
-    .bottom__icon {
+    .bottom {
       margin-left: rem(10);
-      fill: #111;
+      fill: $link-color;
+      transition: $default-transition;
     }
   }
 
@@ -56,5 +57,34 @@
     padding: rem(5) rem(20);
     font-size: rem(16);
     font-weight: 700;
+  }
+
+  &--catalog {
+    position: relative;
+    padding: rem(8) rem(18);
+    padding-right: rem(40);
+    font-size: rem(18);
+    line-height: 24px;
+    background-color: #2b9b2b;
+    border-left: 30px;
+
+    .bottom {
+      position: absolute;
+      top: rem(10);
+      right: rem(17);
+      height: 18px;
+      fill: $white;
+      transform: rotate(-90deg);
+      transition: $default-transition;
+    }
+
+    &:hover {
+      background-color: #2b9b2b;
+
+      .bottom {
+        transform: rotate(90deg);
+        transition: $default-transition;
+      }
+    }
   }
 }

@@ -68,6 +68,7 @@
     "jstransformer-markdown-it": "^2.0.0",
     "lint-staged": "^6.0.0",
     "merge-stream": "^1.0.1",
+    "mixitup": "^3.2.2",
     "mkdirp": "^0.5.1",
     "postcss-import": "^11.0.0",
     "postcss-inline-svg": "^3.0.0",
