@@ -11,7 +11,8 @@
     "search": [],
     "whatwedo": [],
     "content": [],
-    "catalog": []
+    "catalog": [],
+    "slider": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
@@ -23,8 +24,7 @@
     "./src/scss/print.scss"
   ],
   "singleCompiled": [],
-  "addJsBefore": [
-  ],
+  "addJsBefore": [],
   "addJsAfter": [
     "./src/js/global-script.js"
   ],
