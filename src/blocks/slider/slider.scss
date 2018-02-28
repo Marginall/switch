@@ -1,3 +1,143 @@
 .slider {
+  width: rem(792);
+  margin: 0 auto;
+  padding-top: rem(40);
+  padding-bottom: rem(60);
 
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: rem(10);
+    color: $text-color;
+    font-size: rem(21);
+    font-weight: 400;
+    line-height: rem(30);
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 21px);
+      content: '';
+      display: block;
+      width: rem(43);
+      height: 2px;
+      background-color: $text-color;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: rem(50);
+    font-size: rem(16);
+    color: #b7b3b3;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__wrap {
+    position: relative;
+    padding: 0 rem(125);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    outline: none;
+  }
+
+  &__item-text {
+    margin: 0;
+    margin-bottom: rem(15);
+    font-family: $font-family--custom-1;
+    color: $text-color--custom;
+    font-size: rem(16);
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__img {
+    width: rem(42);
+    height: rem(42);
+    margin-right: rem(5);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+
+  &__name {
+    color: $text-color--custom;
+    font-size: rem(16);
+    line-height: rem(18);
+  }
+
+  &__company {
+    font-family: $font-family--custom-2;
+    color: #ccc;
+    font-size: rem(16);
+    line-height: rem(18);
+    font-weight: 700;
+  }
+
+  .slick-list {
+    overflow-x: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 25%;
+    width: rem(25);
+    height: rem(25);
+    cursor: pointer;
+    z-index: 5;
+
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 25px;
+        height: rem(7);
+        background-color: #e0dfdf;
+        border-radius: 20px;
+      }
+
+      &::before {
+        top: 10px;
+        left: -10px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__prev {
+    left: 0;
+    transform: rotate(-45deg);
+  }
+
+  &__next {
+    right: 0;
+    transform: rotate(135deg);
+  }
 }
