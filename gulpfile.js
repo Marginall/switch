@@ -394,6 +394,22 @@ gulp.task('js', function (callback) {
   }
 });
 
+gulp.task('concat', function() {
+  const concat = require('gulp-concat');
+  return gulp.src('src/js/app/*.js')
+    .pipe(size({ // Вывод в консоль размер JS
+        title: "Исходная величина JS",
+        showFiles: true
+    }))
+    .pipe(concat('app.js'))
+    .pipe(size({ // Вывод в консоль размер CSS после gzip
+        title: "JS после gzip",
+        showFiles: true,
+        gzip: true
+    }))
+    .pipe(gulp.dest('build/js/'));
+});
+
 // Ручная оптимизация изображений
 // Использование: folder=src/img npm start img:opt
 const folder = process.env.folder;
@@ -421,7 +437,7 @@ gulp.task('img:opt', function (callback) {
 gulp.task('build', gulp.series(
   'clean',
   gulp.parallel('sprite:svg', 'sprite:png', 'copy:favicon', 'copy:favicon:data'),
-  gulp.parallel('style', 'style:single', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'),
+  gulp.parallel('style', 'style:single', 'js', 'concat', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'),
   'pug'
 ));
 

@@ -2,5 +2,5 @@ mixin svg(name, width, height)
   - var width = width || 24;
   - var height = height || 24;
   
-    svg(class=name + '__icon' aria-hidden="true", viewBox='0 0 ' + width + ' ' + height, width=width + 'px', height=height + 'px')
-      use(xlink:href='../img/sprite-svg.svg#' + name)
+    svg(class=name aria-hidden="true", viewBox='0 0 ' + width + ' ' + height, width=width + 'px', height=height + 'px')
+      use(xlink:href='img/sprite-svg.svg#' + name)

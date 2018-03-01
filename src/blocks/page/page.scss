@@ -12,6 +12,7 @@
   min-width: 320px;
   min-height: 100%;
   font-family: $font-family-1;
+  color: $text-color;
   font-size: $font-size;
   line-height: $line-height;
 }
@@ -127,4 +128,10 @@ a {
 hr {
   box-sizing: content-box; // Проблема Firefox
   overflow: visible;       // Проблема Edge и IE
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

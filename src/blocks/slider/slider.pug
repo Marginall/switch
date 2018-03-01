@@ -1,0 +1,15 @@
+include slider.data.pug
+mixin slider()
+
+  +b('slider')
+    +e('title', {}, 'h3') TESTIMONIALS
+    +e('text', {}, 'p') Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+    +e('wrap js-slider')
+      for item in sliders
+        +e('item')
+          +e('item-text', {}, 'p')= item.text
+          +e('container')
+            +e('img', {}, 'img')(src=item.avatar)
+            +e('text-block')
+              +e('name', {}, 'span')= item.name
+              +e('company', {}, 'span')= item.company

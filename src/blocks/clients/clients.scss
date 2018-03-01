@@ -1,0 +1,56 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: rem(40);
+  padding-bottom: rem(60);
+  background-color: $gray;
+
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: rem(10);
+    color: $text-color;
+    font-size: rem(21);
+    font-weight: 400;
+    line-height: rem(30);
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 21px);
+      content: '';
+      display: block;
+      width: rem(43);
+      height: 2px;
+      background-color: $text-color;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: rem(50);
+    font-size: rem(16);
+    color: #b7b3b3;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    width: 25%;
+    margin-bottom: rem(60);
+  }
+
+  svg {
+    margin: auto;
+    fill: $text-color;
+  }
+}

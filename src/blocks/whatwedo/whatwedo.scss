@@ -1,0 +1,69 @@
+.whatwedo {
+  padding-top: rem(35);
+  padding-bottom: rem(45);
+  text-align: center;
+
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: rem(10);
+    font-size: rem(21);
+    font-weight: 400;
+    line-height: rem(30);
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 21px);
+      content: '';
+      display: block;
+      width: rem(43);
+      height: 2px;
+      background-color: $text-color;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: rem(65);
+    color: #b7b3b3;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    width: 30%;
+    padding: 0 3%;
+  }
+
+  &__container {
+    display: flex;
+    width: 142px;
+    height: 142px;
+    margin: auto;
+    background-color: #e1f3e1;
+    border-radius: 20px;
+  }
+
+  svg {
+    margin: auto;
+    fill: $green;
+  }
+
+  &__item-title {
+    font-family: $font-family-2;
+    color: $text-color;
+    font-size: rem(24);
+  }
+
+  &__item-text {
+    margin-bottom: rem(27);
+    color: $text-color;
+  }
+}
