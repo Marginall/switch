@@ -13,7 +13,13 @@
     "content": [],
     "catalog": [],
     "slider": [],
+<<<<<<< HEAD
     "clients": []
+=======
+    "clients": [],
+    "team": [],
+    "social": []
+>>>>>>> team
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

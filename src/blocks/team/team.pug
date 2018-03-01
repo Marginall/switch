@@ -1,0 +1,14 @@
+include team.data.pug
+mixin team()
+
+  +b('team', {}, 'section')
+    +e('title', {}, 'h3') MEET THE TEAM
+    +e('text', {}, 'p') Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+    +e('list', {}, 'ul')
+      for item in team
+        +e('item', {}, 'li')
+          +e('img', {}, 'img')(src=item.src, width='124', height='124', alt=item.name)
+          +e('name', {}, 'span')= item.name
+          +social()
+    +e('container', {}, 'div')
+      +e('btn btn', 'team', 'a')(href='#') WORK WITH US
