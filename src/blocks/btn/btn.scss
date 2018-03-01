@@ -87,4 +87,37 @@
       }
     }
   }
+
+  &--clients {
+    position: relative;
+    margin: 0 auto;
+    padding: rem(8) rem(18);
+    padding-right: rem(40);
+    font-family: $font-family--custom-1;
+    font-size: rem(18);
+    color: #a59d9d;
+    line-height: 24px;
+    background-color: #dddcdc;
+    border-left: 30px;
+
+    .bottom {
+      position: absolute;
+      top: rem(10);
+      right: rem(17);
+      height: 18px;
+      fill: $text-color;
+      transform: rotate(-90deg);
+      transition: $default-transition;
+    }
+
+    &:hover {
+      background-color: #dddcdc;
+
+      .bottom {
+        fill: #fff;
+        transform: rotate(90deg);
+        transition: $default-transition;
+      }
+    }
+  }
 }

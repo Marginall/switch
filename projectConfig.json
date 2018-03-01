@@ -12,7 +12,8 @@
     "whatwedo": [],
     "content": [],
     "catalog": [],
-    "slider": []
+    "slider": [],
+    "clients": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

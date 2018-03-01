@@ -1,0 +1,24 @@
+mixin clients()
+
+  +b('clients')
+    +e('title', {}, 'h3') OUR HAPPY CLIENT
+    +e('text', {}, 'p') Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
+    +e('list', {}, 'ul')
+      +e('item', {}, 'li')
+        +svg('google', '143', '49')
+      +e('item', {}, 'li')
+        +svg('yahoo', '140', '27')
+      +e('item', {}, 'li')
+        +svg('microsoft', '144', '31')
+      +e('item', {}, 'li')
+        +svg('intel', '103', '68')
+      +e('item', {}, 'li')
+        +svg('qualcomm', '151', '34')
+      +e('item', {}, 'li')
+        +svg('cisco', '125', '65')
+      +e('item', {}, 'li')
+        +svg('apple', '52', '63')
+      +e('item', {}, 'li')
+        +svg('asus', '116', '21')
+    +b('btn', 'clients', 'a')(href='#') See all client
+      +svg('bottom', '7', '10')

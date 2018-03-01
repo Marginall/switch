@@ -1,15 +1,6 @@
 // Базовые цвета https://colorscheme.ru/color-converter.html
 
 $black:                       hsl(0, 0%, 0%);
-$gray-darkest:                hsl(0, 0%, 10%);
-$gray-darker:                 hsl(0, 0%, 20%);
-$gray-darken:                 hsl(0, 0%, 30%);
-$gray-dark:                   hsl(0, 0%, 40%);
-$gray:                        hsl(0, 0%, 50%);
-$gray-light:                  hsl(0, 0%, 60%);
-$gray-lighten:                hsl(0, 0%, 70%);
-$gray-lighter:                hsl(0, 0%, 80%);
-$gray-lightest:               hsl(0, 0%, 90%);
 $white:                       hsl(0, 0%, 100%);
 
 $color-main:                  hsl(208, 98%, 43%);
@@ -17,6 +8,7 @@ $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
 $green:                       #54d154;
+$gray:                       #f2f1f1;
 
 // Семантические цвета
 
@@ -28,8 +20,6 @@ $link-color:                  #fff;
 $link-color--hover:           #54d154;
 
 $btn-bg:                       #54d154;
-
-$border-color:                $gray-light;
 
 // Базовая типографика
 

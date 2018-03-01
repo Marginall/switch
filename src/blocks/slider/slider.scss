@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-top: rem(40);
   padding-bottom: rem(60);
+  background-color: $white;
 
   &__title {
     position: relative;
@@ -129,15 +130,45 @@
         transform: rotate(90deg);
       }
     }
+
+    &:hover {
+      span {
+        &::after,
+        &::before {
+          background-color: $link-color--hover;
+          transition: $default-transition;
+        }
+      }
+    }
+
+    &:active {
+      span {
+        &::after,
+        &::before {
+          background-color: $link-color--hover;
+          transition: $default-transition;
+        }
+      }
+    }
   }
 
   &__prev {
     left: 0;
     transform: rotate(-45deg);
+
+    &:active {
+      left: -20px;
+      transition: $default-transition;
+    }
   }
 
   &__next {
     right: 0;
     transform: rotate(135deg);
+
+    &:active {
+      right: -20px;
+      transition: $default-transition;
+    }
   }
 }
