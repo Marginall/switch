@@ -120,4 +120,13 @@
       }
     }
   }
+
+  &--team {
+    padding-top: rem(7);
+    padding-bottom: rem(7);
+    color: $white;
+    font-size: rem(19);
+    font-weight: 400;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.1);
+  }
 }

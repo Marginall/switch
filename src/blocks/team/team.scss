@@ -1,3 +1,84 @@
 .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: rem(35);
+  background-color: $green;
 
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: rem(10);
+    color: #207b20;
+    font-size: rem(21);
+    font-weight: 400;
+    line-height: rem(30);
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 21px);
+      content: '';
+      display: block;
+      width: rem(43);
+      height: 2px;
+      background-color: #2b9b2b;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: rem(50);
+    font-size: rem(16);
+    color: #2b9b2b;
+    font-weight: 300;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: rem(60);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: rem(50);
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: rem(10);
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: rem(5);
+    color: $white;
+    font-size: rem(16);
+
+    &::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: rem(77);
+      margin: 0 auto;
+      margin-bottom: 5px;
+      background-color: #207b20;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: rem(94);
+    background-color: #3eba3e;
+  }
+}
+
+h3 {
+  letter-spacing: .11em;
 }

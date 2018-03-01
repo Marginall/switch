@@ -14,7 +14,8 @@
     "catalog": [],
     "slider": [],
     "clients": [],
-    "team": []
+    "team": [],
+    "social": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
