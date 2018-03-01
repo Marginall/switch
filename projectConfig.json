@@ -13,7 +13,8 @@
     "content": [],
     "catalog": [],
     "slider": [],
-    "clients": []
+    "clients": [],
+    "team": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
