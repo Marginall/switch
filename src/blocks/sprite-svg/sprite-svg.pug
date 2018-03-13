@@ -3,4 +3,4 @@ mixin svg(name, width, height)
   - var height = height || 24;
   
     svg(class=name aria-hidden="true", viewBox='0 0 ' + width + ' ' + height, width=width + 'px', height=height + 'px')
-      use(xlink:href='../img/sprite-svg.svg#' + name)
+      use(xlink:href='img/sprite-svg.svg#' + name)

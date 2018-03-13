@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: rem(84);
+  height: rem(28);
+  background-color: #c5e9c5;
+  border-radius: 20px;
+
+  .fb {
+    fill: #0061ff;
+  }
+
+  .be {
+    fill: #0061ff;
+  }
+
+  .tw {
+    fill: #00aced;
+  }
+
+  &__link {
+    display: flex;
+
+    svg {
+      margin: auto;
+    }
+  }
+
+  &__link:hover {
+    svg {
+      fill: $link-color--hover;
+      transition: $default-transition;
+    }
+  }
+}
